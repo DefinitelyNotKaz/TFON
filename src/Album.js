@@ -179,7 +179,7 @@ export default function Album() {
         </Box>
         <Container sx={{ py: 8 }} maxWidth="md">
           <Typography variant="h4" color="text.primary" style={{marginBottom: "15px"}}>
-            Custom Stage Transitions
+            Custom Art
           </Typography>
           <ImageList sx={{ width: "100%", height: "100%", overflow: "hidden" }} cols={3} rowHeight={164}>
             {art.map((item) => (
