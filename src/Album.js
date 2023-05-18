@@ -146,7 +146,8 @@ export default function Album() {
         setModalImage(art[id-1].img);
         break;
       default:
-        setModalImage("");
+        setOpen(false)
+        break;
     }
   };
   const handleClose = () => setOpen(false);
@@ -348,7 +349,7 @@ export default function Album() {
                         </Typography>
                     </CardContent>
                     <CardActions>
-                      <Button onClick={() => handleOpen("trinket", card.id)} size="small">View</Button>
+                      <Button onClick={() => handleOpen("trinkets", card.id)} size="small">View</Button>
                       <Modal
                         open={open}
                         onClose={handleClose}
